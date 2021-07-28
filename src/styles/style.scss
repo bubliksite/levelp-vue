@@ -1,0 +1,70 @@
+@import 'fonts';
+@import '_vars.scss';
+
+//Global
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  background-color: $color-main;
+  color: $text-main;
+}
+
+h1,
+h3 {
+  margin-top: 0;
+}
+
+button {
+  color: $text-link;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid $text-link;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  max-width: 95%;
+  margin: 1rem auto;
+}
+
+.text-secondary {
+  margin: 0;
+  color: $text-secondary;
+  font-size: $small;
+}
+
+.margin-bottom-small {
+  margin-bottom: 0.3rem;
+}
+
+.card {
+  background-color: $color-white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  &__header {
+    .header__title {
+      @extend .margin-bottom-small;
+    }
+    .header__subtitle {
+      @extend .text-secondary;
+    }
+  }
+}
+
+.article {
+  margin: 2rem 0;
+  &__title {
+    @extend .margin-bottom-small;
+  }
+  &__date {
+    @extend .text-secondary;
+  }
+  &__body {
+    font-size: $small;
+    margin-bottom: 1rem;
+  }
+}
+
+//Locals
