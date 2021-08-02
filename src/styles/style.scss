@@ -65,6 +65,54 @@ button {
   }
 }
 
+.form {
+  margin: 1rem 0;
+  &__group {
+    display: flex;
+    & > div {
+      width: 50%;
+      &:first-child {
+        padding-right: 2rem;
+      }
+    }
+  }
+  &__input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    label {
+      @extend .text-secondary;
+      margin-left: 0.6rem;
+    }
+    input,
+    select {
+      margin-top: 0.5rem;
+      padding: 0.7rem 0.5rem;
+      border-radius: 0.8rem;
+      border: 1px solid $color-main;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+  &__checkbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    .label {
+      margin-left: 0.3rem;
+      margin-bottom: 0.5rem;
+    }
+    label {
+      @extend .text-secondary;
+      input {
+        margin-right: 0.8rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
 .article {
   margin: 2rem 0;
   &__title {

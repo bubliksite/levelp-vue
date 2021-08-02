@@ -23,7 +23,8 @@
       return {
         menu: [
           {id: 1, title: 'Home', name: 'Home'},
-          {id: 2, title: 'News', name: 'News'}
+          {id: 2, title: 'News', name: 'News'},
+          {id: 3, title: 'Application', name: 'Application'}
         ]
       }
     }
