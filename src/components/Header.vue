@@ -1,9 +1,10 @@
 <template>
-  <header class="header">
+  <header class="bg-dark">
     <div class="container">
-      <nav class="header__nav">
+      <nav class="nav py-4 justify-content-center">
         <router-link
-          class="nav__item"
+          active-class="active text-waring"
+          class="nav-link text-light"
           v-for="item in menu"
           :key="item.id"
           :to="{name: item.name}"
@@ -24,11 +25,17 @@
         menu: [
           {id: 1, title: 'Home', name: 'Home'},
           {id: 2, title: 'News', name: 'News'},
-          {id: 3, title: 'Application', name: 'Application'}
+          {id: 3, title: 'Application', name: 'Application'},
+          {id: 4, title: 'Mail', name: 'Mail'}
         ]
       }
     }
   }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  .nav-link.active {
+    font-weight: bold;
+    color: #fd7e14 !important;
+  }
+</style>

@@ -1,14 +1,16 @@
 <template>
-  <div class="article">
-    <h2 class="article__title">{{ article.title }}</h2>
-    <p class="article__date">{{ article.date }}</p>
-    <div class="article__body">
-      <p>{{ article.excerpt }}</p>
-      <div v-html="article.text" v-if="isOpen"></div>
+  <div>
+    <div class="card bg-light text-body mt-4">
+      <div class="card-header">#{{ article.id }}</div>
+      <div class="card-body">
+        <h4 class="card-title">{{ article.title }}</h4>
+        <p class="card-text">{{ article.excerpt }}</p>
+        <p class="card-text" v-html="article.text" v-if="isOpen"></p>
+        <button class="btn btn-dark" @click="toggleNews">
+          {{ isOpen ? 'Hide' : 'Read more' }}
+        </button>
+      </div>
     </div>
-    <button @click="toggleNews">
-      {{ isOpen ? 'Hide' : 'Read more' }}
-    </button>
   </div>
 </template>
 

@@ -12,4 +12,9 @@
   }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+  @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css');
+  body {
+    background-color: #f5f5f5;
+  }
+</style>
