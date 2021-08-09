@@ -26,7 +26,8 @@
           {id: 1, title: 'Home', name: 'Home'},
           {id: 2, title: 'News', name: 'News'},
           {id: 3, title: 'Application', name: 'Application'},
-          {id: 4, title: 'Mail', name: 'Mail'}
+          {id: 4, title: 'Mail', name: 'Login'},
+          {id: 5, title: 'Vuex', name: 'VuexCounter'}
         ]
       }
     }

@@ -2,15 +2,12 @@
   <div class="container mb-5">
     <h1 class="mt-3 mb-0">News</h1>
     <small class="text-muted"><i class="bi bi-eye"></i> {{ counter }}</small>
-    <div class="row">
-      <Article
-        class="col-sm-6"
-        v-for="article in articles"
-        :key="article.id"
-        :article="article"
-        @clicked="addCounter"
-      />
-    </div>
+    <Article
+      v-for="article in articles"
+      :key="article.id"
+      :article="article"
+      @clicked="addCounter"
+    />
   </div>
 </template>
 

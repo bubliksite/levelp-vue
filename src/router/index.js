@@ -2,7 +2,9 @@ import {createRouter, createWebHistory} from 'vue-router'
 import Home from '../views/Home.vue'
 import News from '../views/News'
 import Application from '../views/Application'
-import MailPage from '../views/MailPage'
+import Login from '../views/Login'
+import Forget from '../views/Forget'
+import VuexCounter from '../views/VuexCounter'
 
 const routes = [
   {
@@ -21,9 +23,19 @@ const routes = [
     component: Application
   },
   {
-    path: '/mail',
-    name: 'Mail',
-    component: MailPage
+    path: '/mail/login',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/mail/forget',
+    name: 'Forget',
+    component: Forget
+  },
+  {
+    path: '/vuex-counter',
+    name: 'VuexCounter',
+    component: VuexCounter
   }
 ]
 
